@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@600&display=swap'); 
+ @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&display=swap'); 
+ *{ 
+   padding:0px; 
+   margin: 0px; 
+   box-sizing: border-box; 
+   list-style: none; 
+ } 
+ button:hover{ 
+   background-color:green !important; 
+   border-color: green; 
+ } 
+ body::-webkit-scrollbar{ 
+   width:8px; 
+   height: 2px; 
+ } 
+
+ body::-webkit-scrollbar-thumb:hover{ 
+   background-color: var(--bg-color); 
+ } 
+
+
+ .ssss-design i:hover{ 
+     color:rgb(106, 191, 106) 
+ }; 
+ @media screen and (max-width:700px){ 
+   .about-senchola i{ 
+     display: none; 
+   } 
+   .gms i{ 
+     display: none; 
+   } 
+ } 
+ .light-grey{ 
+   color:#fff; 
+ } 
+  
+ .about-bg{ 
+   position: relative; 
+   min-height: calc(100vh - 60px); 
+   width: 100%; 
+ } 
+ .about-bg .bg-image{ 
+   position: relative; 
+   min-height: calc(120vh - 60px); 
+   width:100%; 
+   background-image: url(C:\Users\Karup\senchola\src\image.jpg); 
+   background-size: cover; 
+   object-fit: contain; 
+   z-index: 1000; 
+ } 
+  
+ 
+ .about-bg .bg-image::after{ 
+    content:''; 
+    position: absolute; 
+    min-height: 100%; 
+    width:100%; 
+    left: 0%; 
+    top: 0%; 
+    background-color: rgba(0,0,0,0.4); 
+ }
+  .about-bg .content{ 
+   position: absolute; 
+   top:60%; 
+   left:30%; 
+   transform: translate(-40%,-40%); 
+   z-index: 1111111; 
+ } 
+
+ .about-bg .content h3{ 
+   color:#fff; 
+   font-size: 50px; 
+ } 
+ .about-bg .content button{ 
+   background-color:green; 
+   color:#fff; 
+   padding: 10px; 
+   border-radius: 5px; 
+   border: none; 
+   margin-top: 20px;
+   font-weight: bold; 
+ } 
+  
+  
+ /* Media Queries for About background Image */ 
+  
+ @media screen and (max-width:1250px){ 
+   .about-bg .content{ 
+     padding-left: 100px; 
+   } 
+ } 
+ @media screen and (max-width:999px) { 
+   .about-bg .content{ 
+     transform: translate(-50%,-40%); 
+   } 
+ }  
+ @media screen and (max-width:830px){ 
+   .about-bg .content{ 
+     transform: translate(-50%,-60%); 
+   } 
+ } 
+ @media screen and (max-width:600px) { 
+   .about-bg .content{ 
+     transform: translate(-50%,-60%); 
+   } 
+   .about-bg .content h3{ 
+     font-size: 50px; 
+     padding-left: 0px; 
+   } 
+   .about-bg .bg-image{ 
+     width: auto; 
+     background-position: center; 
+     background-size: 100%; 
+     background-repeat: no-repeat; 
+     object-fit: cover; 
+     background-size: cover; 
+   } 
+ } 
+ @media screen and (max-width:524px){ 
+   @media screen and (max-width:700px){ 
+     .about-bg .content{ 
+       transform: translate(-50%,-60%); 
+     } 
+     .about-bg .content h3{ 
+       font-size: 45px; 
+     } 
+   } 
+ } 
+ @media screen and (max-width:465px){ 
+   .about-bg .content h3{ 
+     font-size: 45px; 
+   } 
+   .about-bg .content{ 
+     transform: translate(-60%,-60%); 
+   } 
+ } 
+  
+  
+ /* About senchola Page */ 
+ .about-sen .container .row .background-img img{ 
+   width:750px; 
+   position: absolute; 
+   top:-220px; 
+   right:0px; 
+   z-index: -990; 
+ } 
+  
+ @media screen and (max-width:1100px) { 
+   .about-sen .container .row .background-img img{ 
+     width:700px;  
+    } 
+ } 
+ @media screen and (max-width:991px){ 
+   .about-sen .container .row .background-img img{ 
+     height:950px; 
+      width:500px; 
+      top:-120px; 
+      overflow: hidden; 
+      right:0px; 
+   } 
+ } 
+  
+ @media screen and (max-width:767px){ 
+   .about-sen .container .row .background-img img{ 
+     top:40%; 
+     width: 500px; 
+     height: 600px; 
+     right:0px; 
+  
+   } 
+ } 
+ @media screen and (max-width:575px){ 
+   .about-sen .container .row .background-img img{ 
+     top:46%; 
+     width: 500px; 
+     height: 500px; 
+     right:0px; 
+   } 
+ } 
+ @media screen and (max-width:500px){ 
+   .about-sen .container .row .background-img img{ 
+    top:50%;  
+   } 
+ } 
+ @media screen and (max-width:390px) { 
+   .about-sen .container .row .background-img img{ 
+     top:55%;  
+    } 
+ } 
+ .about-senchola{ 
+   min-height:100vh; 
+   width:100%; 
+   display: flex; 
+   justify-content: center; 
+   align-items: center; 
+   border-radius: 10px 60px; 
+   position: relative; 
+ } 
+ .about-senchola .three-img{ 
+   margin-left: 150px; 
+   z-index: 1000; 
+ } 
+ .about-senchola .about{ 
+   z-index: 10000; 
+ } 
+ .about-senchola .about button{ 
+   background-color: green; 
+ } 
+ 
+ .about-senchola .about p{ 
+   color:black; 
+ } 
+ .about-senchola .container .row{ 
+   display: flex; 
+   justify-content: center; 
+   align-items: center; 
+ } 
+ .about-senchola .three-img .one-img img,.about-senchola .three-img .two-img img{ 
+   width: 250px; 
+   height:350px; 
+   object-fit: cover; 
+   background-size: 100%; 
+   background-position: center; 
+   margin: 10px; 
+   border-radius: 15px;  
+ } 
+ .about-senchola .about button{ 
+   font-weight: bold;
+   border-radius: 20px !important; 
+   border: none; 
+ } 
+ .about-senchola .three-img .one-img{ 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  } 
+  .about-senchola .three-img .two-img{ 
+    display: flex; 
+    flex-direction: column; 
+  } 
+  
+ @media screen and (max-width:767px){ 
+   .about-senchola .three-img .one-img img,.about-senchola .three-img .two-img img{ 
+     height: 200px; 
+   } 
+ } 
+  
+ @media screen and (max-width:992px) { 
+   .about-senchola .three-img{ 
+     margin-left: 100px; 
+   } 
+   .hide{ 
+     display: none; 
+   } 
+ } 
+  
+ @media screen and (max-width:767px) { 
+   .about-senchola .three-img{ 
+     margin-left: 0px; 
+   } 
+ } 
+  
+ @media screen and (max-width:558px){ 
+  
+   .about-senchola .three-img .one-img img,.about-senchola .three-img .two-img img{ 
+     height: 200px; 
+   } 
+   .about-senchola{ 
+     margin-top: 20px; 
+   } 
+   .about-senchola .about p{ 
+     font: 14px !important; 
+   } 
+ }
+ /* About Global */ 
+ 
+  .green{ 
+    color: green; 
+  
+  } 
+  .bg-green{ 
+    color: green; 
+  } 
+  .gms{ 
+    min-height: 100vh; 
+    width:100%; 
+    position: relative; 
+  } 
+  .gms .dummy{ 
+    color:green; 
+    font-size: 35px;
+    font-weight: bold;
+  } 
+  .gms .title p{ 
+    text-align: center; 
+  } 
+  .gms .dark{ 
+    color:black; 
+  } 
+  .gms p{ 
+    color:black;
+    font-size: 14px; 
+  }
+  /* Media querued for book */ 
+  
+ 
+  .gms .container .row{ 
+    display: grid; 
+    grid-gap: 40px 60px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  } 
+  .gms .title span{ 
+    color: green; 
+    
+
+  } 
+  .gms .title span,.global-ser .title p{ 
+    text-align: center; 
+  } 
+   
+  .gms .boxes{ 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-start; 
+    background-color: burlywood; 
+    padding: 30px 30px 10px 30px; 
+    border-radius: 15px; 
+    /*margin-top: 40px;*/ 
+    display: grid; 
+    grid-gap: 10px; 
+  } 
+  .gms .boxes .icon{ 
+    margin:10px 0px; 
+    font-size: 12px;
+  } 
+  .gms .boxes .icon .icon-check{  
+    margin-left: 20px 0px; 
+  } 
+  .gms .boxes .icon .icon-check span{ 
+    margin-left: 10px; 
+  } 
+   
+  .gms .view-all{ 
+    display: flex; 
+    justify-content: flex-end; 
+    font-size: 14px;
+  } 
+   
+ 
+  .gms .title .text{ 
+    position: relative;
+ 
+  } 
+
+  @media screen and (max-width:777px){ 
+    .gms .image-left img{ 
+      width:300px; 
+      height:1000px; 
+    } 
+    .gms{ 
+      margin-top: 40px; 
+    } 
+   .gms .icon-background .one-img{ 
+        position: absolute; 
+        right: 10%; 
+      }  
+  } 
+   
+  @media screen and (max-width:575px){ 
+    .gms{ 
+      padding: 10px; 
+      margin-top: 20px; 
+    } 
+    .gms .icon-background .icon i{ 
+      display: none; 
+    } 
+  } 
+   
+ 
+  
+  /*Profile and testimonial */ 
+  
+ .profile{ 
+   margin-top: 20px; 
+   min-height: 500px; 
+   width: 100%; 
+   background-image: url(C:\Users\Karup\senchola\public\image4.jpg); 
+   background-position: center; 
+   background-size: cover; 
+   object-fit: cover; 
+   background-color: rgba(0,0,0,0.4); 
+   display: flex; 
+   justify-content: center; 
+   align-items: center; 
+   padding: 10px; 
+ } 
+ .profile .box{ 
+   display: flex; 
+   flex-direction: column; 
+   justify-content: center; 
+   align-items: center; 
+   background-color:#ccc; 
+   padding: 20px; 
+   border-radius: 35px; 
+ } 
+ .profile .box h3{
+  font-size: 22px;
+ }
+ .profile .box p{
+  font-size: 16px;
+ }
+ .profile .box img{ 
+   height:80px; 
+   width:80px; 
+   border-radius: 50%; 
+   background-size: cover; 
+   object-fit: cover; 
+   background-position: center; 
+ } 
+ .profile .container .row{ 
+   display: grid; 
+   grid-gap:20px 60px; 
+   display: flex; 
+   justify-content: center; 
+   align-items: center; 
+ } 
+  
+ .box i{ 
+    color: orange; 
+    font-size: 15px;
+  } 
+  
+ /*Footer */ 
+  
+ .footer{ 
+   min-height: 300px; 
+   width:100%; 
+   background-color: green; 
+ } 
+ .footer .foo{ 
+   margin-top: 20px; 
+ } 
+ .footer .row{ 
+    
+   display: flex; 
+   justify-content: center; 
+   align-items: center; 
+ } 
+ .footer .foo .form-group{ 
+   position: relative; 
+ } 
+ .footer .foo .form-group .email-icon{ 
+   position: absolute; 
+   top:calc(15%); 
+   font-size: 16px; 
+   right:10%; 
+   color: green;
+ } 
+ .footer .foo .footer-ins li{ 
+   color: white !important; 
+   font-weight: 200; 
+ } 
+ .footer-ins{ 
+   color: white !important; 
+   font-weight: 200; 
+ } 
+ .footer .foo:nth-child(5){ 
+   margin-bottom: 20px; 
+ } 
+ .footer .foo .social-media-icon i{ 
+   font-size: 25px; 
+   color:white; 
+   padding:10px; 
+ } 
+ .footer .foo h5{ 
+ 
+   font-size: 500; 
+ } 
+ .footer .foo .footer-ins li,.footer .foo p{ 
+  
+   color: #fff !important; 
+ } 
+ .footer .foo span{  
+   margin-top: 20px; 
+ } 
+  
+ .footer .foo input{ 
+   margin-top: 15px; 
+ } 
+  
+ .footer .foo .social-media-icon{ 
+   margin-top: 10px; 
+ }
